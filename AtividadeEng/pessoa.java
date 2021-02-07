@@ -1,14 +1,16 @@
-package projetojava;
+package AtividadeEng;
 
-public class pessoa {
-    private String nome;
-    private int idade;
-    private String sexo;
-    
-    public void fazerAniversario(){
-        this.idade++;
+public abstract class pessoa {
+    protected String nome;
+    protected int idade;
+    protected String sexo;
+
+    public pessoa(String nome, int idade, String sexo){
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
     }
-
+    
     public String getNome() {
         return nome;
     }
@@ -32,10 +34,4 @@ public class pessoa {
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
-
-    @Override
-    public String toString() {
-        return "Pessoa{" + "nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + '}';
-    }
-           
 }
