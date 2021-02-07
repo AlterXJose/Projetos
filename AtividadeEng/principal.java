@@ -12,8 +12,13 @@ public class principal {
         i[1] = new inscrito("Ana Maria", 30, "F", "MariaA");
         i[2] = new inscrito("Pedro Silva", 35, "M", "JSilvaX");
 
-
-        System.out.println(v[0].toString());
-
+        visualizacao w[] = new visualizacao[5];
+        w[0] = new visualizacao(i[0], v[2]);
+        w[0].avaliar();
+        System.out.println(w[0].toString());
+        w[1] = new visualizacao(i[0], v[1]);
+        w[0].avaliar(87.0f);
+        System.out.println(w[1].toString());
+        
     }    
 }

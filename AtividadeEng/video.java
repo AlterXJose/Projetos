@@ -28,7 +28,9 @@ public class video implements comandos{
     }
 
     public void setAvaliacao(int avaliacao) {
-        this.avaliacao = avaliacao;
+        int nova;
+        nova = ((this.avaliacao + avaliacao)/this.views);
+        this.avaliacao = nova;
     }
 
     public int getViews() {
@@ -72,7 +74,7 @@ public class video implements comandos{
 
     @Override
     public String toString() {
-        return "Video{" + "Titulo = " + titulo + ", Avalicação = " + avaliacao + ", Views = " + views + ", Curtidas = " + curtidas + ", Reproduzindo = " + reproduzindo + '}';
+        return "Video {" + "Titulo = " + titulo + "\n Avalicação = " + avaliacao + ", Views = " + views + ", Curtidas = " + curtidas + ", Reproduzindo = " + reproduzindo + '}';
     }
     
 }

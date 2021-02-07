@@ -25,5 +25,10 @@ public class inscrito extends pessoa {
     public void setTotassistido(int totassistido) {
         this.totassistido = totassistido;
     }
+
+    @Override
+    public String toString() {
+        return "Inscritos {" + "Nome = " + nome + ", Idade = " + idade + ", Sexo = " + sexo + "\n Login = " + login + ", Total de aulas assitidas = " + totassistido + '}';
+    }
     
 }
