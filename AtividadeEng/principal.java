@@ -1,8 +1,6 @@
 package AtividadeEng;
 import java.util.Scanner;
 
-import java.util.Scanner;
-
 public class principal {
     public static void main(String[] args) {
         Scanner t = new Scanner(System.in);
