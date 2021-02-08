@@ -1,11 +1,16 @@
 package AtividadeEng;
+import java.util.Scanner;
 
 public class principal {
     public static void main(String[] args) {
-        video v[] = new video[3];
-        v[0] = new video("Aula 01 de POO");
-        v[1] = new video("Aula 03 de PHP");
-        v[2] = new video("Aula 01 de Python");
+        Scanner t = new Scanner(System.in);
+        
+        video v[] = new video[3];       
+        for (int i = 0; i < v.length; i++) {
+            System.out.println("Crie uma aula de Programação: ");
+            String str = t.nextLine();         
+            v[i] = new video(str);
+        }
 
         inscrito i[] = new inscrito[3];
         i[0] = new inscrito("Joao Vitor", 22, "M", "JoaoVitor10");
